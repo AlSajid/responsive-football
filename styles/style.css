@@ -132,6 +132,41 @@ button i {
   color: #6c6c6c;
 }
 
+/* bonus section */
+.promo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 5% 0;
+  padding: 1%;
+  background-color: whitesmoke;
+}
+.promo h2,
+label {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 143%;
+
+  color: #18191f;
+  margin: 10px 0px;
+}
+
+.subscription form {
+  text-align: center;
+  width: 50%;
+  margin: 5% auto;
+  padding: 5% 0;
+  border: wheat dotted 3px;
+}
+
+input {
+  font-size: 16px;
+  padding: 4px;
+  height: 36px;
+  margin: 24px;
+}
+
 /* footer styles */
 footer {
   text-align: center;
@@ -139,12 +174,29 @@ footer {
 }
 
 footer img {
-  height: 110px;
+  width: 34%;
+}
+
+footer .social {
+  display: block;
+  margin: 25px 0;
+}
+footer a {
+  text-decoration: none;
+}
+footer .icon {
+  display: inline;
+  text-align: center;
+  border-radius: 25%;
+  margin: 14px;
+  padding: 10px;
+  width: 32px;
+  height: 32px;
+  background-color: #e7e7e8;
+  color: #969bab;
 }
 
 footer small {
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
   line-height: 133%;
 
@@ -164,21 +216,34 @@ footer small {
 
 /* media queries for mobile & Tablet*/
 @media screen and (max-width: 769px) {
-  nav {
-    display: none;
-  }
-
   .top {
     flex-direction: column;
     width: 100%;
     margin: 16px;
   }
 
+  .title {
+    margin-left: 16px;
+  }
+
   .title h1 {
     font-size: 36px;
     line-height: 139%;
   }
+
+  .banner {
+    margin: 16px;
+    text-align: center;
+  }
+
   .cards {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .promo iframe {
+    width: 100%;
+  }
+  .subscription form {
+    width: 100%;
+    margin: 5% 0;
   }
 }
